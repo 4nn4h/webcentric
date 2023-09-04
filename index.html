@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en">
 
 <head>
@@ -5,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebCentric Digital</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -13,14 +16,15 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col">
-                <header class="text-center">
-                    <h1 class="font-weight-bold">Are you looking to promote your business and increase your clientele?
-                    </h1>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm" id="blurb">
+                <h1>Are you looking to promote your business and increase your
+                    clientele?
+                </h1>
                 </header>
-                <p class="text-justify">
+                <p>
                     WebCentric Digital is offering services for small businesses, non-profits and charitable
                     organizations.
                     We provide website design and development, search engine optimization, and post launch support.
@@ -28,9 +32,9 @@
                 </p>
             </div>
 
-            <div class="col">
-                <header class="text-center">
-                    <h2 class="font-weight-bold">Let's get in touch</h2>
+            <div class="col-sm" id="contact-form">
+                <header>
+                    <h1>Let's get in touch</h1>
                 </header>
                 <div class="form-group">
                     <form action="" method="post">
@@ -54,12 +58,13 @@
                         </div>
                         <textarea class="form-control" name="message" placeholder="Message" required></textarea>
                         <input type="hidden" name="_template" value="table">
-                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        <button type="submit">Submit</button>
                         <input type="hidden" name="_next" value="">
                     </form>
                 </div>
             </div>
         </div>
+
     </div>
 </body>
 
