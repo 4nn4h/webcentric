@@ -1,7 +1,24 @@
 body {
-    background-color: grey !important;
+    background-color: black !important;
+    color: white !important;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+nav {
+    background-color: white !important;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    top: 0;
+    position: fixed;
+}
+
+.container-fluid {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
