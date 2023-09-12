@@ -1,24 +1,40 @@
 body {
     background-color: black !important;
     color: white !important;
-    margin: 0;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-nav {
+/*#navigation {
     background-color: white !important;
     width: 100%;
     margin: 0 auto;
-    padding: 0 auto;
     top: 0;
-    position: fixed;
+}*/
+
+h1 , h2 {
+    font-size: 30px !important;
 }
 
-.container-fluid {
+p {
+    font-size: 18px !important;
+}
+
+#blurb-form {
     width: 70%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#contact-form {
+    background-color: gray !important;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
