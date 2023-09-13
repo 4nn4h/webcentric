@@ -11,9 +11,9 @@ body {
     background-color: black !important;
     color: white !important;
     display: flex;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-image: var(--gradient);
     background-size: 300%;
     animation: bg-animation 10s infinite alternate;
@@ -36,7 +36,7 @@ h2 {
 }
 
 h1 {
-    padding-top: 10%;
+    padding: 10% 0 3% 0;
 }
 
 p {
@@ -44,12 +44,12 @@ p {
     line-height: normal;
 }
 
-#brand-name {
+.brand-name {
     font-weight: bold;
     font-style: italic;
 }
 
-#blurb-form {
+#blurb-form, #thanks-text {
     width: 90%;
     max-width: 1366px;
 }
@@ -70,9 +70,9 @@ button {
 }
 
 #contact-form {
-    background-color: rgba(255, 255, 255, 25%) !important;
+    background-color: rgba(255, 255, 255, 10%) !important;
     color: white !important;
-    border: 1px solid rgba(255, 255, 255, 25%);
+    border: 1px solid rgba(255, 255, 255, 10%);
     padding: 10px 20px 20px 20px;
     border-radius: 25px;
     filter: drop-shadow(2px 4px 6px black);
@@ -80,7 +80,7 @@ button {
 }
 
 .input-group-text,
-.form-control {
+.form-control, #back-button {
     margin: 5px 0;
 }
 
@@ -90,4 +90,23 @@ button {
 
 .input-group-text {
     border-radius: 10px 0 0 10px !important;
+}
+
+button:hover, #back-button:hover{
+    background-color: gold !important;
+    border-color: gold !important;
+    box-shadow: 0 0 8px rgba(255,255,0, 100%);
+}
+
+button:active, #back-button:active{
+    background-color: orange !important;
+    border-color: darkorange !important;
+}
+
+#thanks-box p {
+    line-height: 90%;
+}
+
+#thanks-msg {
+padding: 0;
 }
