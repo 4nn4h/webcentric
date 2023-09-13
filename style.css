@@ -1,3 +1,12 @@
+:root {
+    --gradient: linear-gradient(45deg,
+    #6667ab,
+    #9c57a1,
+    #c5427f,
+    #d73c4c,
+    #cc5500);
+}
+
 body {
     background-color: black !important;
     color: white !important;
@@ -5,29 +14,80 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: var(--gradient);
+    background-size: 300%;
+    animation: bg-animation 10s infinite alternate;
 }
 
-h1 , h2 {
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+h1,
+h2 {
     font-size: 30px !important;
+    font-weight: bolder !important;
+}
+
+h1 {
+    padding-top: 10%;
 }
 
 p {
-    font-size: 18px !important;
+    font-size: 24px !important;
+    line-height: normal;
+}
+
+#brand-name {
+    font-weight: bold;
+    font-style: italic;
 }
 
 #blurb-form {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1366px;
+}
+
+#blurb,
+#contact-form {
+    align-self: center
 }
 
 #blurb {
     margin-right: 5%;
 }
 
+.input-group-text,
+button {
+    background-color: lightgray !important;
+    border-color: lightgray !important;
+}
+
 #contact-form {
-    background-color: gray !important;
-    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 25%) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 25%);
     padding: 10px 20px 20px 20px;
     border-radius: 25px;
-    align-self:center
+    filter: drop-shadow(2px 4px 6px black);
+    box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
+}
+
+.input-group-text,
+.form-control {
+    margin: 5px 0;
+}
+
+.form-control {
+    border: 1px solid white !important;
+}
+
+.input-group-text {
+    border-radius: 10px 0 0 10px !important;
 }
