@@ -108,7 +108,7 @@ button:active, #back-button:active{
     width: 90%;
     max-width: 1280px;
     margin: 25px 0;
-    padding: 25px 10px;
+    padding: 25px 15px;
     justify-content: center;
     align-items: center;
     border: 1px solid white !important;
@@ -116,7 +116,7 @@ button:active, #back-button:active{
 }
 
 #thanks-box {
-    margin: 15px 5px;
+    margin: 15px 10px 15px 0;
     text-align: center;
 }
 
