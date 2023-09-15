@@ -44,12 +44,13 @@ p {
     line-height: normal;
 }
 
-.brand-name {
+.brand-name, .email-name {
     font-weight: bold;
     font-style: italic;
+    word-wrap: break-word;
 }
 
-#blurb-form, #thanks-text {
+#blurb-form {
     width: 90%;
     max-width: 1366px;
 }
@@ -102,9 +103,24 @@ button:active, #back-button:active{
     background-color: orange !important;
     border-color: darkorange !important;
 }
+#thanks-text {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 25px 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white !important;
+    border-radius: 25px;
+}
+
+#thanks-box {
+    margin: 15px 5px;
+    text-align: center;
+}
 
 #thanks-box p {
-    line-height: 90%;
+    line-height: 95%;
 }
 
 #thanks-msg {
