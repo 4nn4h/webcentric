@@ -120,10 +120,6 @@ button:active, #back-button:active{
     text-align: center;
 }
 
-#thanks-box p {
-    line-height: 95%;
-}
-
 #thanks-msg {
 padding: 0;
 }
